@@ -1,0 +1,284 @@
+<html>
+	<head>
+		<title>HTML &amp; CSS Cheat-sheet</title>
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+	</head>
+	<body>
+		<header>
+			<h1>HTML &amp CSS Cheat-sheet</h1>
+		</header>
+		<hr />
+		<section class="content">
+			<section class="ClearTagExamples">
+				<h2 class="sectionheader">Basic Tags</h2>
+				<div class="row">
+					<div class="col-2up">
+						<h1>Heading 1 (<span class="tag">&lt;h1&gt;</span><span class="tag">&lt;/h1&gt;</span>)</h1>
+						<h2>Heading 2 (<span class="tag">&lt;h2&gt;</span><span class="tag">&lt;/h2&gt;</span>)</h2>
+						<h3>Heading 3 (<span class="tag">&lt;h3&gt;</span><span class="tag">&lt;/h3&gt;</span>)</h3>
+						<h4>Heading 4 (<span class="tag">&lt;h4&gt;</span><span class="tag">&lt;/h4&gt;</span>)</h4>
+						<h5>Heading 5 (<span class="tag">&lt;h5&gt;</span><span class="tag">&lt;/h5&gt;</span>)</h5>
+					</div>
+					<div class="col-2up">
+						<p>This is a text paragraph using the <span class="tag">&lt;p&gt;</span><span class="tag">&lt;/p&gt;</span> tag
+						<br />This is an example of <em>emphasised test</em> using the  <span class="tag">&lt;em&gt;</span><span class="tag">&lt;/em&gt;</span>
+						<br /><span style='color:red;'>This text is coloured using the CSS </span><span class="cssattr">color</span><span style='color:red;'> attribute</span>
+						</p>
+						<p>Images using the <span class="tag">&lt;img&gt;</span> tag:</p>
+						<img src="1.png" alt="Triangle" />
+						<img src="2.png" alt="Star" />
+						<img src="3.png" alt="Circle" />
+						<img src="4.png" alt="Umbrella" />
+					</div>
+				</div>
+			</section>
+			<br /><br />
+			<hr />
+		
+			<section>
+				<h2 class="sectionheader">Tables</h2>
+				<div class="row">
+					<div class="col-2up">
+ 						<p>Basic Declaration</p>
+						<div>
+							<table>
+								<thead>
+									<tr><th>Column 1</th><th>Column 2</th><th>Column 3</th></tr>
+								</thead>
+								<tbody>
+									<tr><td>(1,1)</td><td>(1,2)</td><td>(1,3)</td></tr>
+									<tr><td>(2,1)</td><td>(2,2)</td><td>(2,3)</td></tr>
+									<tr><td>(3,1)</td><td>(3,2)</td><td>(3,3)</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-2up">
+						<div class="SourcePanel"><span class="tag">&lt;table&gt;</span>
+	<span class="tag">&lt;thead&gt;</span>
+		<span class="tag">&lt;tr&gt;&lt;th&gt;</span><span class="txt">Column 1</span><span class="tag">&lt;/th&gt;&lt;th&gt;</span><span class="txt">Column 2</span><span class="tag">&lt;/th&gt;&lt;th&gt;</span><span class="txt">Column 3</span><span class="tag">&lt;/th&gt;&lt;/tr&gt;</span>
+	<span class="tag">&lt;/thead&gt;</span>
+	<span class="tag">&lt;tbody&gt;</span>
+		<span class="tag">&lt;tr&gt;&lt;td&gt;</span><span class="txt">(1,1)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(1,2)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(1,3)</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span>
+		<span class="tag">&lt;tr&gt;&lt;td&gt;</span><span class="txt">(2,1)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(2,2)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(2,3)</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span>
+		<span class="tag">&lt;tr&gt;&lt;td&gt;</span><span class="txt">(3,1)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(3,2)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(3,3)</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span>
+	<span class="tag">&lt;/tbody&gt;</span>
+<span class="tag">&lt;/table&gt;</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-2up">
+						<p>Column Spanning</p>
+						<div>
+							<table>
+								<thead>
+									<tr><th>Column 1</th><th>Column 2</th><th>Column 3</th></tr>
+								</thead>
+								<tbody>
+									<tr><td colspan="2" style="background-color: khaki;">(1,1+2)</td><td>(1,2)</td></tr>
+									<tr><td>(2,1)</td><td>(2,2)</td><td>(2,3)</td></tr>
+									<tr><td>(3,1)</td><td colspan="2" style="background-color: khaki;">(3,2+3)</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-2up">
+						<div class="SourcePanel"><span class="tag">&lt;table&gt;</span>
+	<span class="tag">&lt;thead&gt;</span>
+	<span class="tag">&lt;tr&gt;&lt;th&gt;</span><span class="txt">Column 1</span><span class="tag">&lt;/th&gt;&lt;th&gt;</span><span class="txt">Column 2</span><span class="tag">&lt;/th&gt;&lt;th&gt;</span><span class="txt">Column 3</span><span class="tag">&lt;/th&gt;&lt;/tr&gt;</span>
+	<span class="tag">&lt;/thead&gt;</span>
+	<span class="tag">&lt;tbody&gt;</span>
+	<span class="tag">&lt;tr&gt;&lt;td</span><span class="op"> </span><span class="attr">colspan</span><span class="op">=</span><span class="val">"2"</span><span class="op"> </span><span class="attr">style</span><span class="op">=</span><span class="val">"background-color: khaki;"</span><span class="tag">&gt;</span><span class="txt">(1,1+2)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(1,2)</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span>
+	<span class="tag">&lt;tr&gt;&lt;td&gt;</span><span class="txt">(2,1)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(2,2)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(2,3)</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span>
+	<span class="tag">&lt;tr&gt;&lt;td&gt;</span><span class="txt">(3,1)</span><span class="tag">&lt;/td&gt;&lt;td</span><span class="op"> </span><span class="attr">colspan</span><span class="op">=</span><span class="val">"2"</span><span class="op"> </span><span class="attr">style</span><span class="op">=</span><span class="val">"background-color: khaki;"</span><span class="tag">&gt;</span><span class="txt">(3,2+3)</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span>
+	<span class="tag">&lt;/tbody&gt;</span>
+<span class="tag">&lt;/table&gt;</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-2up">
+						<p>Row Spanning</p>
+						<div>
+							<table>
+								<thead>
+									<tr><th>Column 1</th><th>Column 2</th><th>Column 3</th></tr>
+								</thead>
+								<tbody>
+									<tr><td rowspan="2" style="background-color: khaki;">(1+2,1)</td><td>(1,2)</td><td>(1,3)</td></tr>
+									<tr><td>(2,2)</td><td>(2,3)</td></tr>
+									<tr><td>(3,1)</td><td>(3,2)</td><td>(3,3)</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-2up">
+						<div class="SourcePanel"><span class="tag">&lt;table&gt;</span>
+	<span class="tag">&lt;thead&gt;</span>
+	<span class="tag">&lt;tr&gt;&lt;th&gt;</span><span class="txt">Column 1</span><span class="tag">&lt;/th&gt;&lt;th&gt;</span><span class="txt">Column 2</span><span class="tag">&lt;/th&gt;&lt;th&gt;</span><span class="txt">Column 3</span><span class="tag">&lt;/th&gt;&lt;/tr&gt;</span>
+	<span class="tag">&lt;/thead&gt;</span>
+	<span class="tag">&lt;tbody&gt;</span>
+	<span class="tag">&lt;tr&gt;&lt;td</span><span class="op"> </span><span class="attr">rowspan</span><span class="op">=</span><span class="val">"2"</span><span class="op"> </span><span class="attr">style</span><span class="op">=</span><span class="val">"background-color: khaki;"</span><span class="tag">&gt;</span><span class="txt">(1+2,1)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(1,2)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(1,3)</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span>
+	<span class="tag">&lt;tr&gt;&lt;td&gt;</span><span class="txt">(2,2)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(2,3)</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span>
+	<span class="tag">&lt;tr&gt;&lt;td&gt;</span><span class="txt">(3,1)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(3,2)</span><span class="tag">&lt;/td&gt;&lt;td&gt;</span><span class="txt">(3,3)</span><span class="tag">&lt;/td&gt;&lt;/tr&gt;</span>
+	<span class="tag">&lt;/tbody&gt;</span>
+<span class="tag">&lt;/table&gt;</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<br /><br />
+			<hr />
+			<section>
+					<h2 class="sectionheader">CSS Flex Layout (Direction &amp Justification)</h2>
+					<div class="row">
+						<div class="col-2up dualSource">
+							<div id='FlexSample1' class="FlexContainer">
+								<div class="GenericBlock">1</div>
+								<div class="GenericBlock">2</div>
+								<div class="GenericBlock">3</div>
+							</div>
+						</div>
+						<div class="col-2up dualSource">
+							<div class="SourcePanel SourcePanel-r2"><span class="dot">.</span><span class="cls">FlexContainer</span><span class="tag"> </span><span class="dot">{</span><span class="cssattr">
+    display</span><span class="dot">:</span><span class="cssval"> flex</span><span class="dot">;</span><span class="cssattr">
+    flex-direction</span><span class="dot">:</span><span class="cssval"> row</span><span class="dot">;</span><span class="cssattr">
+    justify-content</span><span class="dot">:</span><span class="cssval"> left</span><span class="dot">;</span><span class="cssattr">
+    border</span><span class="dot">:</span><span class="cssval">1px solid #000</span><span class="dot">;</span><span class="cssattr">
+    height</span><span class="dot">:</span><span class="cssval">95%</span><span class="dot">;</span><span class="cssattr">
+    padding</span><span class="dot">:</span><span class="cssval">1%</span><span class="dot">;</span><span class="cssattr">
+    width</span><span class="dot">:</span><span class="cssval">90%</span><span class="dot">;</span>
+<span class="dot">}</span>
+							</div>
+							<div class="SourcePanel SourcePanel-r2"><span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"FlexContainer"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">1</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">2</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">3</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2up dualSource">
+							<div id='FlexSample5' class="FlexContainer">
+								<div class="GenericBlock">1</div>
+								<div class="GenericBlock">2</div>
+								<div class="GenericBlock">3</div>
+							</div>
+						</div>
+						<div class="col-2up dualSource">
+							<div class="SourcePanel SourcePanel-r2"><span class="dot">.</span><span class="cls">FlexContainer</span><span class="tag"> </span><span class="dot">{</span><span class="cssattr">
+    display</span><span class="dot">:</span><span class="cssval"> flex</span><span class="dot">;</span><span class="cssattr">
+    flex-direction</span><span class="dot">:</span><span class="cssval"> row</span><span class="dot">;</span><span class="cssattr">
+    justify-content</span><span class="dot">:</span><span class="cssval"> right</span><span class="dot">;</span><span class="cssattr">
+    border</span><span class="dot">:</span><span class="cssval">1px solid #000</span><span class="dot">;</span><span class="cssattr">
+    height</span><span class="dot">:</span><span class="cssval">95%</span><span class="dot">;</span><span class="cssattr">
+    padding</span><span class="dot">:</span><span class="cssval">1%</span><span class="dot">;</span><span class="cssattr">
+    width</span><span class="dot">:</span><span class="cssval">90%</span><span class="dot">;</span>
+<span class="dot">}</span>
+							</div>
+							<div class="SourcePanel SourcePanel-r2"><span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"FlexContainer"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">1</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">2</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">3</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2up dualSource">
+							<div id='FlexSample2' class="FlexContainer">
+								<div class="GenericBlock">1</div>
+								<div class="GenericBlock">2</div>
+								<div class="GenericBlock">3</div>
+							</div>
+						</div>
+						<div class="col-2up dualSource">
+							<div class="SourcePanel SourcePanel-r2"><span class="dot">.</span><span class="cls">FlexContainer</span><span class="tag"> </span><span class="dot">{</span><span class="cssattr">
+    display</span><span class="dot">:</span><span class="cssval"> flex</span><span class="dot">;</span><span class="cssattr">
+    flex-direction</span><span class="dot">:</span><span class="cssval"> row</span><span class="dot">;</span><span class="cssattr">
+    justify-content</span><span class="dot">:</span><span class="cssval"> left</span><span class="dot">;</span><span class="cssattr">
+    border</span><span class="dot">:</span><span class="cssval">1px solid #000</span><span class="dot">;</span><span class="cssattr">
+    height</span><span class="dot">:</span><span class="cssval">95%</span><span class="dot">;</span><span class="cssattr">
+    padding</span><span class="dot">:</span><span class="cssval">1%</span><span class="dot">;</span><span class="cssattr">
+    width</span><span class="dot">:</span><span class="cssval">90%</span><span class="dot">;</span><span class="cssattr">
+    flex-direction</span><span class="dot">:</span><span class="cssval"> column</span><span class="dot">;</span>
+<span class="dot">}</span>
+							</div>
+							<div class="SourcePanel SourcePanel-r2"><span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"FlexContainer"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">1</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">2</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">3</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2up dualSource">
+							<div id='FlexSample3' class="FlexContainer">
+								<div class="GenericBlock">1</div>
+								<div class="GenericBlock">2</div>
+								<div class="GenericBlock">3</div>
+							</div>
+						</div>
+						<div class="col-2up dualSource">
+							<div class="SourcePanel SourcePanel-r2"><span class="dot">.</span><span class="cls">FlexContainer</span><span class="tag"> </span><span class="dot">{</span><span class="cssattr">
+    display</span><span class="dot">:</span><span class="cssval"> flex</span><span class="dot">;</span><span class="cssattr">
+    flex-direction</span><span class="dot">:</span><span class="cssval"> row</span><span class="dot">;</span><span class="cssattr">
+    justify-content</span><span class="dot">:</span><span class="cssval"> left</span><span class="dot">;</span><span class="cssattr">
+    border</span><span class="dot">:</span><span class="cssval">1px solid #000</span><span class="dot">;</span><span class="cssattr">
+    height</span><span class="dot">:</span><span class="cssval">95%</span><span class="dot">;</span><span class="cssattr">
+    padding</span><span class="dot">:</span><span class="cssval">1%</span><span class="dot">;</span><span class="cssattr">
+    width</span><span class="dot">:</span><span class="cssval">90%</span><span class="dot">;</span><span class="cssattr">
+    justify-content</span><span class="dot">:</span><span class="cssval"> space-evenly</span><span class="dot">;</span>
+<span class="dot">}</span>
+							</div>
+							<div class="SourcePanel SourcePanel-r2"><span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"FlexContainer"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">1</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">2</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">3</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2up dualSource">
+							<div id='FlexSample4' class="FlexContainer">
+								<div class="GenericBlock">1</div>
+								<div class="GenericBlock">2</div>
+								<div class="GenericBlock">3</div>
+							</div>
+						</div>
+						<div class="col-2up dualSource">
+							<div class="SourcePanel SourcePanel-r2"><span class="dot">.</span><span class="cls">FlexContainer</span><span class="tag"> </span><span class="dot">{</span><span class="cssattr">
+    display</span><span class="dot">:</span><span class="cssval"> flex</span><span class="dot">;</span><span class="cssattr">
+    flex-direction</span><span class="dot">:</span><span class="cssval"> row</span><span class="dot">;</span><span class="cssattr">
+    justify-content</span><span class="dot">:</span><span class="cssval"> left</span><span class="dot">;</span><span class="cssattr">
+    border</span><span class="dot">:</span><span class="cssval">1px solid #000</span><span class="dot">;</span><span class="cssattr">
+    height</span><span class="dot">:</span><span class="cssval">95%</span><span class="dot">;</span><span class="cssattr">
+    padding</span><span class="dot">:</span><span class="cssval">1%</span><span class="dot">;</span><span class="cssattr">
+    width</span><span class="dot">:</span><span class="cssval">90%</span><span class="dot">;</span><span class="cssattr">
+    justify-content</span><span class="dot">:</span><span class="cssval"> space-evenly</span><span class="dot">;</span><span class="cssattr">
+    align-items</span><span class="dot">:</span><span class="cssval"> center</span><span class="dot">;</span>
+<span class="dot">}</span>
+							</div>
+							<div class="SourcePanel SourcePanel-r2"><span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"FlexContainer"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">1</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">2</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div </span><span class="attr">class</span><span class="operator">=</span><span class="val">"GenericBlock"</span><span class="tag">&gt;</span><span class="txt">3</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+							</div>
+						</div>
+					</div>
+			</section>
+		</section>
+		<footer>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,205 @@
+* {
+	font-family: 'Arial';
+	color:black;
+}
+
+body {
+	padding: 2em;
+}
+
+h1 {
+	font-size:24px;
+}
+h2 {
+	font-size:22px;
+}
+h3 {
+	font-size:20px;
+}
+h4 {
+	font-size:18px;
+}
+h5 {
+	font-size:16px;
+}
+h6 {
+	font-size:14px;
+}
+
+header h1 {
+	font-size:24px;
+	width:100%;
+	text-align:center;
+	margin-top:30px;
+}
+
+.ClearTagExamples h1, .ClearTagExamples h2, .ClearTagExamples h3, .ClearTagExamples h4, .ClearTagExamples h5, .ClearTagExamples h6 {
+	margin:10px;
+}	
+
+.ClearTagExamples img {
+	width:50px;
+}
+
+.sectionheader {
+	font-size:20px;
+	width:100%;
+	text-align:center;
+}
+
+hr {
+	width:95%;
+	margin:0 auto;
+}
+
+.content {
+	width:95%;
+	padding:10px;
+	margin:0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+	margin-top:20px;
+}
+
+.col-2up:first-of-type {
+    width: 55%;
+}
+
+.col-2up:last-of-type {
+    width: 45%;
+}
+
+.SourcePanel {
+    height: 196px;
+    min-height: 196px;
+    overflow-y: scroll;
+    border: 1px solid #666;
+    padding: 0px;
+    font-size: 12px;
+	margin:15px;
+	white-space: pre;
+}
+
+.SourcePanel-r2 {
+	margin: 0px !important;
+	height:211px;
+	width:47%;
+}
+
+.column-1up {
+	width:100%;
+}
+
+.column-2up {
+	width:50%;
+}
+
+
+table {
+  border-collapse: collapse;
+  width:100%;
+  font-size:12px;
+}
+
+th, td {
+  padding:6px;
+  text-align:center;
+  width:33.3%;
+}
+
+th, tr:last-child td {
+  border-bottom: 1px solid black;
+}
+
+tr:nth-child(odd) {
+	background-color: white;
+}
+tr:nth-child(even) {
+	background-color: #CCC;
+}
+
+.FlexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+	border:1px solid #000;
+	height:95%;
+	padding:1%;
+	width:90%;
+}
+
+.GenericBlock {
+    width: 50px;
+    height: 50px;
+	padding: 11px 4px 0px 4px;
+    border: 0px;
+    margin: 0px 10px 6px 0px;
+    background-color: #CCC;
+    font-size: 2em;
+    text-align: center;
+}
+
+.GenericBlock:first-of-type {
+	margin-left:0px;
+}
+
+#FlexSample2 {
+    flex-direction: column;
+}
+
+#FlexSample3 {
+	justify-content: space-evenly;
+}
+
+#FlexSample4 {
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#FlexSample5 {
+	justify-content: right;
+}
+
+.dualSource {
+	display:flex;
+	justify-content:space-evenly;
+}
+
+.dualSource {
+	width:60% !important;
+}
+
+.dualSource:first-of-type {
+	width:40% !important;
+}
+
+.txt,.val,.cssval,.cssattr,.dot {
+	font-weight: bold;
+}
+.tag {
+	color: #0000FF;
+}
+.attr {
+	color: #FF0000;
+}
+.val {
+ 	color: #8000FF;
+}
+.htmlencoded {
+ 	font-style: italic;
+	background: #FEFDE0;
+}
+.cls {
+	color: #FF0000;
+}
+.cssattr
+{
+	color: #8080C0;
+}
+.tag1 {
+	font-weight: bold;
+	color: #FF0000;
+}
